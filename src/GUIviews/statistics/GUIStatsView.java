@@ -33,7 +33,7 @@ public class GUIStatsView extends AbstractView {
         numLogins = controller.getNumLogins();
         totalMessagesSent = controller.totalMessagesSent();
         totalAttendance = controller.getTotalAttendance();
-        avgEventsAttendees = controller.attendeesPerUser();//Todo: double check if this is a typo
+        avgEventsAttendees = controller.attendeesPerUser();
         avgAttendeesEvents = controller.attendeesPerEvent();
     }
     @Override
