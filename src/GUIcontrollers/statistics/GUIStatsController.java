@@ -1,4 +1,4 @@
-Gpackage GUIcontrollers.statistics;
+package GUIcontrollers.statistics;
 
 import controllers.AbstractController;
 import controllers.ControllerType;
