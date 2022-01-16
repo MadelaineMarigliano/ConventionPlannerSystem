@@ -1,0 +1,116 @@
+.root{
+    -fx-background-color: derive(#1d1d1d, 3%);
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: derive(#1d1d1d, 22%);
+    -fx-text-fill: white;
+}
+
+.text-field{
+    -fx-background-color: derive(#1d1d1d, 22%);
+    -fx-text-fill: white;
+}
+.list-cell:even {
+    -fx-background-color: derive(#1d1d1d, 10%);
+    -fx-text-fill: white;
+}
+
+.list-cell:odd {
+    -fx-background-color: derive(#1d1d1d, 15%);
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: derive(#BB86FC, 7%);
+    -fx-text-fill: white;
+}
+
+.scroll-pane {
+    -fx-background-color: derive(#1d1d1d, 3%);
+}
+
+.combo-box .list-cell {
+    -fx-background-color: derive(#1d1d1d, 22%);
+    -fx-text-fill: white;
+}
+
+.choice-box {
+    -fx-background-color: derive(#1d1d1d, 22%);
+}
+
+.choice-box .context-menu {
+    -fx-background-color: derive(#1d1d1d, 22%);
+    -fx-text-fill: white;
+    -fx-mark-color: white;
+}
+
+#BorderPane-threads {
+    -fx-background-color: derive(#1d1d1d, 3%);
+}
+
+#vbox-threads {
+    -fx-background-color: derive(#1d1d1d, 3%);
+}
+
+.scroll-pane {
+    -fx-background: derive(#1d1d1d, 3%);
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: derive(#1d1d1d, 3%);
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: derive(#1d1d1d, 22%);
+}
+
+.grid {
+    -fx-background-color: derive(#1d1d1d, 3%);
+}
+
+#hbox-group-threads {
+    -fx-background-color: derive(#1d1d1d, 3%);
+    -fx-text-fill: white;
+}
+
+#label-threads {
+    -fx-background-color: derive(#1d1d1d, 3%);
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: derive(#1d1d1d, 22%);
+}
+
+.table-cell {
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: derive(#1d1d1d, 15%);
+}
+
+.table-row-cell:even {
+    -fx-background-color: derive(#1d1d1d, 10%);
+}
+
+.table-row-cell:odd {
+    -fx-background-color: derive(#1d1d1d, 15%);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: derive(#BB86FC, 7%);
+}
+
+.spinner .increment-arrow-button {
+    -fx-body-color: derive(#1d1d1d, 22%);
+}
+
+.spinner .decrement-arrow-button {
+    -fx-body-color: derive(#1d1d1d, 22%);
+}

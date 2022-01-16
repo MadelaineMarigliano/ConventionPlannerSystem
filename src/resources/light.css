@@ -1,0 +1,116 @@
+.root{
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+.label{
+    -fx-text-fill: black;
+}
+
+.button{
+    -fx-background-color: derive(#F8F8F8, -6%);
+    -fx-text-fill: black;
+}
+
+.text-field{
+    -fx-background-color: derive(#F8F8F8, -6%);
+    -fx-text-fill: black;
+}
+.list-cell:even {
+    -fx-background-color: derive(#F8F8F8, -6%);
+    -fx-text-fill: black;
+}
+
+.list-cell:odd {
+    -fx-background-color: derive(#F8F8F8, -9%);
+    -fx-text-fill: black;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: derive(#BB86FC, 7%);
+    -fx-text-fill: black;
+}
+
+.scroll-pane {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+.combo-box .list-cell {
+    -fx-background-color: derive(#F8F8F8, -6%);
+    -fx-text-fill: black;
+}
+
+.choice-box {
+    -fx-background-color: derive(#F8F8F8, -6%);
+}
+
+.choice-box .context-menu {
+    -fx-background-color: derive(#F8F8F8, -6%);
+    -fx-text-fill: black;
+    -fx-mark-color: black;
+}
+
+#BorderPane-threads {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+#vbox-threads {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+.scroll-pane {
+    -fx-background: derive(#F8F8F8, -2%);
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: derive(#F8F8F8, -6%);
+}
+
+.grid {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+#hbox-group-threads {
+    -fx-background-color: derive(#F8F8F8, -2%);
+    -fx-text-fill: black;
+}
+
+#label-threads {
+    -fx-background-color: derive(#F8F8F8, -2%);
+    -fx-text-fill: black;
+}
+
+.table-view {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+.table-cell {
+    -fx-text-fill: black;
+}
+
+.table-view .column-header {
+    -fx-background-color: derive(#F8F8F8, -6%);
+}
+
+.table-row-cell:even {
+    -fx-background-color: derive(#F8F8F8, -2%);
+}
+
+.table-row-cell:odd {
+    -fx-background-color: derive(#F8F8F8, -6%);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: derive(#BB86FC, 7%);
+}
+
+.spinner .increment-arrow-button {
+    -fx-body-color: derive(#F8F8F8, -6%);
+}
+
+.spinner .decrement-arrow-button {
+    -fx-body-color: derive(#F8F8F8, -6%);
+}
