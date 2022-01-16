@@ -1,0 +1,66 @@
+To run the program, please run the Main class in controllers
+Program starts off with an organizer
+Username: admin_account,
+Password: 1357642
+
+Design Patterns:
+MVC
+We needed a design for our UI that was flexible, modular, and that allowed our controllers to follow clean
+architecture. Our controllers are all of the classes with Controller in them. They are responsible for the
+flow of the program. The views are the View classes in both the GUI and the TextUI. Our model was the use
+cases (or more specifically the use case bundle). This allowed our controllers to manipulate entities
+through the use cases, while the use cases update the information that the presenters (or views) show.
+The design allowed for flexibility in designing how each controller works, while still making sure that
+controllers flow between each other and run successfully as the user navigates the pages.
+
+Factory
+We used factories in places where we needed to create an object of a certain superclass, but the exact
+subclass did not matter. In the UserControllerFactory, the generate method creates a controller of the
+specified type, while the controller that called the method is only interested in knowing that it is a
+controller for a User, regardless of which type. The GUIViewFactory reduces repeated code and makes
+generating GUIView objects easier and less cluttered.
+
+Observer
+Some of the statistics being recorded are dependent on certain actions in the program
+(like number of logins). We needed a way to alert the StatsManager, which stores the statistics,
+that certain values need to be updated. This was accomplished by adding methods in the StatsManager
+that are to be called in other controllers (like the login controller) to notify that the change occurred
+and to update the statistic. This allowed us to store the statistics in one place, rather than having to
+store each statistic with the relevant controller or use case. It also allows more statistics to easily
+be tracked in the future from different parts of the program simply by adding more methods to StatsManager
+and calling them when the relevant action occurs.
+
+Singleton
+We only wanted to have one instance of each use case, so that there would be no contradicting information
+between them. Thus, we create all of our use case classes on startup inside of our UseCaseBundle. We then
+pass this bundle to the controllers using dependency injection, allowing them to use the use cases without
+needing to make the use cases global variables.
+
+List of Features:
+
+Mandatory Features:
+- We now have events with multiple speakers, 1 speaker, or no speaker at all. Our event durations are now
+measured down to the minute.
+- Events can be canceled by at least one organizer.
+- There is now a VIP user that can invite 1 guest with them to the conference
+- We have an admin account that controls the creation of speaker, attendee, and VIP attendee accounts.
+- We extended our program to allow us to set the capacity of events at the organizer's discretion.
+
+Optional Features:
+- Expanded the menus available to organizers that now allows them to get useful summary stats
+about the conference, including app traffic statistics, event enrollment statistics, and top-five lists.
+- Replaced text UI with a Graphic User Interface (GUI).
+- Had the program produce a neatly formatted program or schedule for the conference that
+users have the option of "downloading"
+
+Extra Features:
+- Enhanced the user's messaging experience by allowing them to "mark as unread".
+- Light and dark mode options in the GUI
+- Profile avatars in the GUI
+
+Minor Changes Made:
+- Changed stats lists from ascending to descending
+- numAttendees fixed for stats
+- Fixed deleting announcements for deleting organizers
+- Fixed GUIAnnouncementHome not showing announcements
+- Changed colour of dark mode messages
